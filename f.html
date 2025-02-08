@@ -1,0 +1,733 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari - CAROPEDIA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+          crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" 
+          crossorigin="anonymous"></script>
+     <script src="f.js"></script>
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F8F8F8; /* Light gray background for a soft feel */
+            color: #333333; /* Dark gray text for readability */
+        }
+
+        header {
+            background-color: #e41616; /* Ferrari red */
+            color: white;
+            padding: 15px 0;
+        }
+
+        header h1 {
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            height: 65px;
+            margin-right: 10px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF; /* White content background */
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .ferrari {
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .enzo {
+            max-width: 80%;
+            height: 300px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid #FF2800; /* Ferrari red border */
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #212121; /* Ferrari red */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .collapsible {
+            background-color: white;
+            color: rgb(173, 22, 22);
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            /* outline: none; */
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 5px;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .active, .collapsible:hover {
+            background-color: rgb(173, 22, 22);
+            color: white;
+        }
+
+        .contentb {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+        }
+
+        #Laf{
+            height: 200px;
+            width: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .ferrari {
+                height: 80px;
+            }
+
+            header img {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                
+                <h1 class="d-flex align-items-center mb-0">
+                    <img src="p.jpg" alt="Caropedia Logo" class="rounded-pill mr-2" style="height: 65px;">
+                    <a href="car.html" style="color: white; text-decoration: none;">CAROPEDIA</a>
+                </h1>
+                
+                <nav>
+                    <a href="c.html" class="btn btn-light">Home</a>
+                    <a href="c.html" class="btn btn-light">Gallery</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container mt-4">
+        <div class="content">
+            <h1 class="text-center">
+                <img src="Ferrari.png" alt="Ferrari Logo" class="ferrari">
+                <b>Ferrari</b>
+            </h1>
+            <ul class="mt-4">
+                <li>
+                    Ferrari is an Italian luxury sports car manufacturer based in Maranello, Italy. It was founded in 1939 
+                    by <b>Enzo Ferrari</b> as Auto Avio Costruzioni and officially became "Ferrari" in 1947. The brand is known 
+                    for its iconic red cars, innovative engineering, and unparalleled success in racing.
+                    <br>
+                    <div class="text-center">
+                        <img src="enzo.jpg" alt="Enzo Ferrari" class="enzo">
+                        <h5 class="center">Enzo Ferrari (Founder)</h5>
+                    </div>
+                </li>
+                
+                <li>
+                    Since 2021, the current CEO of Ferrari is <b>Benedetto Vigna</b>, a leader focused on pushing the brand 
+                    towards innovation while maintaining its racing heritage.
+                    <br>
+                    <div class="text-center">
+                        <img src="bv.jpg" alt="Benedetto Vigna" class="enzo">
+                        <h5 class="center">Benedetto Vigna (CEO)</h5>
+                    </div>
+                </li>
+                
+                <li>
+                    Ferrari is synonymous with motorsports, especially <b>Formula 1</b>, where its team, <b>Scuderia Ferrari</b>, 
+                    is the most successful in history. The team holds records for most wins, championships, and fastest laps. 
+                    Additionally, Ferrari has achieved legendary victories in endurance races like the <b>Le Mans 24 Hours</b>, 
+                    <b>Daytona 24</b>, and <b>Sebring 12 Hours</b>.
+                </li>
+                <li>
+                    Ferrari's current road cars are benchmarks for performance, design, and luxury. Iconic models like the 
+                    <b>Ferrari LaFerrari</b>, <b>F8 Tributo</b>, and <b>Purosangue SUV</b> reflect the brand's commitment to 
+                    pushing boundaries in automotive excellence.
+                </li>
+                <li>
+                    Here are some of Ferrari's greatest creations : 
+                </li>
+            </ul>
+            <ol>
+                <li>
+                    <button class="collapsible"><b>Ferrari LaFerrari</b></button>
+                    <div class="contentb row">
+                        <div id="demo" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#demo" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="la1.jpg" alt="LaFerrari 1" id="LaF" class="mx-auto d-block" style="height: 200px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="la5.jpg" alt="LaFerrari 2" id="LaF">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="la3.jpg" alt="LaFerrari 3" id="LaF">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>The <b>Ferrari LaFerrari</b> is a limited-production hybrid sports car unveiled at the 2013 Geneva Motor Show...</li>
+                                <li><b>Production:</b> 2013-2016</li>
+                                <li><b>Power:</b> 949 hp (708 kW; 962 PS)</li>
+                                <li><b>0-60 mph:</b> 2.4 seconds</li>
+                                <li><b>Top Speed:</b> 220 mph (354 km/h)</li>
+                                <li><b>Type:</b> Hybrid Hypercar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Ferrari Portofino</b></button>
+                    <div class="contentb">
+                        <p>The Ferrari Portofino is a grand touring sports car with a retractable hardtop.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Ferrari Testarossa</b></button>
+                    <div class="contentb">
+                        <p>The Ferrari Testarossa is a 12-cylinder mid-engine sports car, one of Ferrari’s most iconic models.</p>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Ferrari GT50</b></button>
+                    <div class="contentb">
+                        <p>The Ferrari GT50 is a rare, high-performance model celebrating Ferrari’s 50th anniversary in Japan.</p>
+                    </div>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <script>
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach(button => {
+            button.addEventListener("click", function() {
+                collapsibles.forEach(btn => {
+                    if (btn !== this) {
+                        btn.classList.remove("active");
+                        btn.nextElementSibling.style.display = "none";
+                    }
+                });
+                
+                this.classList.toggle("active");
+                let content = this.nextElementSibling;
+                content.style.display = (content.style.display === "block") ? "none" : "block";
+            });
+        });
+    </script>
+
+    
+    <footer class="mt-5">
+        <p>&copy; 2025 CAROPEDIA. All Rights Reserved.</p>
+    </footer>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari - CAROPEDIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F8F8F8;
+            color: #333333;
+        }
+
+        header {
+            background-color: #053816; /* Bold yellow for dynamic racing feel */
+            color: white;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 15px;
+            text-transform: uppercase;
+        }
+
+        header img {
+            height: 65px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ferrari {
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .enzo {
+            max-width: 80%;
+            height: 300px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid #FF2800;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #212121;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .collapsible {
+            background-color: white;
+            color: rgb(173, 22, 22);
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 5px;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .active, .collapsible:hover {
+            background-color: rgb(173, 22, 22);
+            color: white;
+        }
+
+        .contentb {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            padding: 0 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .carousel-item img {
+            height: auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .ferrari {
+                height: 80px;
+            }
+
+            header img {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="d-flex align-items-center mb-0">
+                    <img src="p.jpg" alt="Caropedia Logo" class="rounded-pill mr-2">
+                    <a href="c.html">CAROPEDIA</a>
+                </h1>
+                <nav>
+                    <a href="c.html" class="btn btn-light">Home</a>
+                    <a href="c.html" class="btn btn-light">Gallery</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-4 redd">
+        <div class="content">
+            <h1 class="text-center">
+                <img src="Ferrari.png" alt="Ferrari Logo" class="ferrari">
+                <b>Ferrari</b>
+            </h1>
+            <ul class="mt-4">
+                <li>
+                    Ferrari is an Italian luxury sports car manufacturer based in Maranello, Italy. It was founded in 1939 
+                    by <b>Enzo Ferrari</b> as Auto Avio Costruzioni and officially became "Ferrari" in 1947. The brand is known 
+                    for its iconic red cars, innovative engineering, and unparalleled success in racing.
+                    <br>
+                    <div class="text-center">
+                        <img src="enzo.jpg" alt="Enzo Ferrari" class="enzo">
+                        <h5 class="center">Enzo Ferrari (Founder)</h5>
+                    </div>
+                </li>
+                
+                <li>
+                    Since 2021, the current CEO of Ferrari is <b>Benedetto Vigna</b>, a leader focused on pushing the brand 
+                    towards innovation while maintaining its racing heritage.
+                    <br>
+                    <div class="text-center">
+                        <img src="bv.jpg" alt="Benedetto Vigna" class="enzo">
+                        <h5 class="center">Benedetto Vigna (CEO)</h5>
+                    </div>
+                </li>
+                
+                <li>
+                    Ferrari is synonymous with motorsports, especially <b>Formula 1</b>, where its team, <b>Scuderia Ferrari</b>, 
+                    is the most successful in history. The team holds records for most wins, championships, and fastest laps. 
+                    Additionally, Ferrari has achieved legendary victories in endurance races like the <b>Le Mans 24 Hours</b>, 
+                    <b>Daytona 24</b>, and <b>Sebring 12 Hours</b>.
+                </li>
+                <li>
+                    Ferrari's current road cars are benchmarks for performance, design, and luxury. Iconic models like the 
+                    <b>Ferrari LaFerrari</b>, <b>F8 Tributo</b>, and <b>Purosangue SUV</b> reflect the brand's commitment to 
+                    pushing boundaries in automotive excellence.
+                </li>
+                <li>
+                    Here are some of Ferrari's greatest creations : 
+                </li>
+            </ul>
+            <ol>
+                <li>
+                    <button class="collapsible"><b>Ferrari LaFerrari</b></button>
+                    <div class="contentb row">
+                        <div id="demo" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#demo" data-bs-slide-to="2"></button>
+                                <button data-bs-target="#demo" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="la1.jpg" alt="LaFerrari 1" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="la5.jpg" alt="LaFerrari 2" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="la3.jpg" alt="LaFerrari 3" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="la2.jpg" alt="LaFerrari 4" style="height: 350px; width: 300px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>            
+                            </button> 
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li> The <b>Ferrari LaFerrari</b> is a limited-production hybrid sports
+                                    car that was unveiled at the 2013 Geneva Motor Show. It is powered by a 6.3-liter V12 engine. 
+                                </li>
+                                <li>
+                                    <b>Production:</b> 2013-2016
+                                    <br>
+                                    <b>Engine:</b> 6.3L V12 with KERS (HY-KERS) electric motor
+                                    <br>
+                                    <b>Power:</b> 949 hp (708 kW; 962 PS)
+                                    <br>
+                                    <b>0-100 kph:</b> 2.4 seconds
+                                    <br>
+                                    <b>Top Speed:</b> 354 km/h
+                                    <br>
+                                    <b>Type:</b> Hybrid Hypercar
+                                    <br>
+                                    <b>Notable Feature:</b> Ferrari’s first hybrid hypercar combining performance with efficiency
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Ferrari F40</b></button>
+                    <div class="contentb row">
+                        <div id="demo1" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="f40_1.jpg" alt="Ferrari F40" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="f40_2.jpg" alt="Ferrari F40" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="f40_3.jpg" alt="Ferrari F40" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="f40_5.jpg" alt="Ferrari F40" style="height: 350px; width: 300px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#demo1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#demo1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>            
+                            </button> 
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li> The <b>Ferrari F40</b> is a mid-engined, two-seater supercar produced by Ferrari from 1987 to
+                                    1992. It was the last Ferrari to be powered by a naturally aspirated engine.
+                                </li>
+                                <li>
+                                    <b>Production:</b> 1987-1992
+                                    <br>
+                                    <b>Engine:</b> 2.9L Twin-Turbo V8
+                                    <br>
+                                    <b>Power:</b> 478 hp (356 kW)
+                                    <br>
+                                    <b>0-100 kph:</b> 4.1 seconds  
+                                    <br>
+                                    <b>Top Speed:</b> 323 km/h
+                                    <br>
+                                    <b>Type:</b> Supercar
+                                    <br>
+                                    <b>Notable Feature:</b> Built to celebrate Ferrari’s 40th anniversary and the last car personally approved by Enzo Ferrari
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Ferrari 250 GTO</b></button>
+                    <div class="contentb row">
+                        <div id="demo2" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#demo2" data-bs-slide-to="2"></button>
+                                <button data-bs-target="#demo2" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="gt1.jpg" alt="Ferrari 250 GTO" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="gt2.jpg" alt="Ferrari 250 GTO" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="gt3.jpg" alt="Ferrari 250 GTO" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="gt4.jpg" alt="Ferrari 250 GTO" style="height: 350px; width: 300px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#demo2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#demo2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>            
+                            </button> 
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li> The <b>Ferrari 250 GTO</b> is a classic car that was produced by Ferrari from 1962 to 1964. It is
+                                    considered one of the most beautiful cars ever made and is highly sought after by collectors. The
+                                    designer of this car is <b>Giotto Bizzarrini</b>.
+                                </li>
+                                <li>
+                                    <b>Production:</b> 1962-1964
+                                    <br>
+                                    <b>Engine:</b> 3.0L V12
+                                    <br>
+                                    <b>Power:</b> 300 hp (220 kW)
+                                    <br>
+                                    <b>0-100 kph:</b> 2.9 seconds  
+                                    <br>
+                                    <b>Top Speed:</b> 280 km/h
+                                    <br>
+                                    <b>Type:</b> Grand Tourer
+                                    <br>
+                                    <b>Notable Feature:</b> Only 36 units were produced, making it one of the rarest and most valuable Ferraris in the world.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Ferrari Daytona SP3</b></button>
+                    <div class="contentb row">
+                        <div id="demo3" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#demo2" data-bs-slide-to="2"></button>
+                                <button data-bs-target="#demo2" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="dsp3_4.jpeg" alt="Ferrari Daytona SP3" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="dsp3_1.jpeg" alt="Ferrari Daytona SP3" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="dsp3_2.jpeg" alt="Ferrari Daytona SP3" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="dsp3_3.jpeg" alt="Ferrari Daytona SP3" style="height: 350px; width: 300px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#demo3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#demo3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>            
+                            </button> 
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li> The <b>Ferrari Daytona SP3</b> is a limited-edition supercar that was unveiled in 2021. 
+                                    It is a modern interpretation of the classic Ferrari Daytona. 
+                                    The car is powered by a V12 engine and features a sleek, aerodynamic design.
+                                </li>
+                                <li>
+                                    <b>Production:</b> 2021-present
+                                    <br>
+                                    <b>Engine:</b> 6.5L V12
+                                    <br>
+                                    <b>Power:</b> 828 hp (618 kW)
+                                    <br>
+                                    <b>0-100 kph:</b> 2.85 seconds 
+                                    <br>
+                                    <b>Top Speed:</b> 340 km/h
+                                    <br>
+                                    <b>Type:</b> Supercar
+                                    <br>
+                                    <b>Notable Feature:</b> Limited to 599 units, each car is custom-built to the owner’s specifications. 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".collapsible").forEach(button => {
+            button.addEventListener("click", function() {
+                let content = this.nextElementSibling;
+                if (!this.classList.contains("active")) {
+                    document.querySelectorAll(".collapsible").forEach(btn => {
+                        btn.classList.remove("active");
+                        btn.nextElementSibling.style.maxHeight = null;
+                    });
+                    this.classList.add("active");
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    this.classList.remove("active");
+                    content.style.maxHeight = null;
+                }
+            });
+        });
+    </script>
+
+    <footer class="mt-5">
+        <p>&copy; 2025 CAROPEDIA. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

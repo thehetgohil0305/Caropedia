@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McLaren - CAROPEDIA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+          crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" 
+          crossorigin="anonymous"></script>
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #FAFAFA; /* Light gray background for softness */
+            color: #333333; /* Dark gray text for better readability */
+        }
+
+        header {
+            background-color: #FF7F00; /* McLaren orange */
+            color: white;
+            padding: 15px 0;
+        }
+
+        header h1 {
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            height: 65px;
+            margin-right: 10px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #F4F4F4; /* Light cream/gray background for content */
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .mclaren-logo {
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .car-image {
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid #FF7F00; /* McLaren orange border */
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #FF7F00; /* McLaren orange */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .mclaren-logo {
+                height: 80px;
+            }
+
+            header img {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Left: Caropedia Logo and Text -->
+                <h1 class="d-flex align-items-center mb-0">
+                    <img src="p.jpg" alt="Caropedia Logo" class="rounded-pill mr-2" style="height: 65px;">
+                    <a href="car.html" style="color: white; text-decoration: none;">CAROPEDIA</a>
+                </h1>
+                <!-- Right: Home Link -->
+                <nav>
+                    <a href="c.html" class="btn btn-light">Home</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="content">
+            <h1 class="text-center">
+                <img src="McLaren.png" alt="McLaren Logo" class="mclaren-logo">
+                <b>McLaren</b>
+            </h1>
+            <ul class="mt-4">
+                <li>
+                    McLaren is a British luxury automaker known for its high-performance sports cars, founded in 1963 by Bruce McLaren. 
+                    The company is headquartered in Woking, Surrey, and has earned a reputation for producing some of the fastest and most innovative cars in the world.
+                    <br>
+                    <img src="bm.jpg" alt="Bruce McLaren" class="car-image">
+                    <h5 class="center">Bruce McLaren (Founder)</h5>
+                </li>
+                <li>
+                    As of 2021, the CEO of McLaren Automotive is <b>Zak Brown</b>, leading the company towards further technological advancements in performance and electric vehicles.
+                    <br>
+                    <img src="zb.jpg" alt="Zak Brown" class="car-image">
+                    <h5 class="center">Zak Brown (CEO)</h5>
+                </li>
+                <li>
+                    McLaren is heavily involved in motorsports, particularly in <b>Formula 1</b>. The McLaren F1 team has won multiple championships and continues to be a major player in F1 racing.
+                </li>
+                <li>
+                    The brand's road cars, such as the <b>McLaren P1</b>, <b>McLaren 720S</b>, and <b>McLaren Artura</b>, are celebrated for their incredible speed, lightweight design, and cutting-edge technology.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <p>&copy; 2025 CAROPEDIA. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+</body>
+</html>

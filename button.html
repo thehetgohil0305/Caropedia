@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sections</title>
+    <style>
+        .collapsible {
+            background-color: white;
+            color: red;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .content {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <button class="collapsible"><b>Portofino</b></button>
+    <div class="content">
+        <p>The Ferrari Portofino is a grand touring sports car with a retractable hardtop.</p>
+    </div>
+    <br>
+    <button class="collapsible"><b>Testarossa</b></button>
+    <div class="content">
+        <p>The Ferrari Testarossa is a 12-cylinder mid-engine sports car, one of Ferrari’s most iconic models.</p>
+    </div>
+    <br>
+    <button class="collapsible"><b>GT50</b></button>
+    <div class="content">
+        <p>The Ferrari Testarossa is a 12-cylinder mid-engine sports car, one of Ferrari’s most iconic models.</p>
+    </div>
+
+    <script>
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach(button => {
+            button.addEventListener("click", function() {
+                collapsibles.forEach(btn => {
+                    if (btn !== this) {
+                        btn.classList.remove("active");
+                        btn.nextElementSibling.style.display = "none";
+                    }
+                });
+                
+                this.classList.toggle("active");
+                let content = this.nextElementSibling;
+                content.style.display = (content.style.display === "block") ? "none" : "block";
+            });
+        });
+    </script>
+</body>
+</html>

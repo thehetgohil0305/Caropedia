@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McLaren - CAROPEDIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+          
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAFAFA; /* Light gray background for softness */
+            color: #333333; /* Dark gray text for better readability */
+        }
+
+        header {
+            background-color: #053816; 
+            color: white;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 15px;
+            text-transform: uppercase;
+        }
+
+        header img {
+            height: 65px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF ; /* Light cream/gray background for content */
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .mclaren-logo {
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none; /* Use bullets for the list items */
+            padding-left: 0; /* Add some left padding for proper alignment */
+        }
+
+        ul li {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+
+        .car-image {
+            max-width: 80%;
+            height: 300px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid #FF7F00; /* McLaren orange border */
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #212121; /* McLaren orange */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .collapsible {
+            background-color: white;
+            color: rgb(219, 109, 19);
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 5px;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .active, .collapsible:hover {
+            background-color: rgb(219, 109, 19);
+            color: white;
+        }
+
+        .contentb {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            padding: 0 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .carousel-item img {
+            height: auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .mclaren-logo {
+                height: 80px;
+            }
+
+            header img {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Left: Caropedia Logo and Text -->
+                <h1 class="d-flex align-items-center mb-0">
+                    <img src="p.jpg" alt="Caropedia Logo" class="rounded-pill mr-2" style="height: 65px;">
+                    <a href="c.html" style="color: white; text-decoration: none;">CAROPEDIA</a>
+                </h1>
+                <!-- Right: Home Link -->
+                <nav>
+                    <a href="c.html" class="btn btn-light">Home</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="content">
+            <h1 class="text-center">
+                <img src="mcl.png" alt="McLaren Logo" class="mclaren-logo">
+                <b>McLaren</b>
+            </h1>
+            <ul class="mt-4">
+                <li>
+                    McLaren is a British luxury automaker known for its high-performance sports cars, founded in 1963 by <b>Bruce McLaren</b>. 
+                    The company is headquartered in Woking, Surrey, and has earned a reputation for producing some of the fastest and most innovative cars in the world.
+                    <br>
+                    <div class="text-center">
+                        <img src="bm.jpg" alt="Bruce McLaren" class="car-image">
+                        <h5>Bruce McLaren (Founder)</h5>
+                    </div>
+                </li>
+                
+                <li>
+                    As of 2021, the CEO of McLaren Automotive is <b>Zak Brown</b>, leading the company towards further technological advancements in performance and electric vehicles.
+                    <br>
+                    <img src="zb.jpg" alt="Zak Brown" class="car-image">
+                    <h5 class="center">Zak Brown (CEO)</h5>
+                </li>
+                <li>
+                    McLaren has a rich history in motorsports, particularly in <b>Formula 1</b>, where its team, <b>McLaren F1 Team</b>, 
+                    is one of the most successful in the sport’s history. The team has secured multiple <b>Drivers’ and 
+                    Constructors’ Championships</b>, legendary victories, and developed some of the <b>fastest and most technologically advanced race cars</b>.
+                    <br>
+                </li>
+                <li>
+                    McLaren has been home to iconic drivers like <b>Ayrton Senna, Alain Prost, Lewis Hamilton, and Mika Häkkinen</b>. 
+                    Beyond F1, the brand has also triumphed in endurance racing, winning prestigious events like the <b>Le Mans 24 Hours</b> with the <b>McLaren F1 GTR</b>.
+                </li>
+                <li>
+                    McLaren's current road cars are renowned for their performance, innovation, and cutting-edge design. 
+                    Iconic models like the <b>McLaren P1</b>, <b>720S</b>, and <b>Artura</b> showcase the brand’s commitment to <b>lightweight 
+                    engineering, aerodynamics, and high-performance hybrid technology</b>. With a focus on speed, precision, 
+                    and driving dynamics, McLaren continues to push the boundaries of automotive excellence in the supercar and hypercar segments.
+                </li>
+            </ul>
+            <ol>
+                <li>
+                    <button class="collapsible"><b>Mclaren P1</b></button>
+                    <div class="contentb row">
+                        <div id="demo1" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="p1_1.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="p1_6.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="p1_3.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="p1_5.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#demo1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#demo1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>            
+                            </button> 
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li> The <b>Mclaren P1</b> has hybrid powertrain for exceptional performance and efficiency. 
+                                    And light weight carbon fiber construction for agility and speed.
+                                    Due to its limited production, the P1 is a highly sought-after collector's item.                                                                                                            
+                                </li>
+                                <li>
+                                    <b>Production:</b> 2013-2015
+                                    <br>
+                                    <b>Engine:</b> 3.8L twin-turbocharged V8 with electric motor
+                                    <br>
+                                    <b>Power:</b> 903 hp (673 kW; 916 PS)
+                                    <br>
+                                    <b>0-100 kph:</b> 2.8 seconds
+                                    <br>
+                                    <b>Top Speed:</b> 349 km/h
+                                    <br>
+                                    <b>Type:</b> Hybrid Hypercar
+                                    <br>
+                                    <b>Notable Feature:</b> Active aerodynamics and Instant Power Assist System (IPAS)  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Mclaren 720S</b></button>
+                    <div class="contentb row">
+                        <div id="demo2" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#demo2" data-bs-slide-to="2"></button>
+                                <button data-bs-target="#demo2" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="720s1.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="720s2.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="720s3.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="720s4.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#demo2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#demo2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>            
+                            </button> 
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li> The <b>Mclaren 720S</b> is a high-performance supercar known for its lightweight design, 
+                                    extreme aerodynamics, and blistering speed. Part of McLaren’s Super Series, it was 
+                                    introduced in 2017 as the successor to the 650S
+                                </li>
+                                <li>
+                                    <b>Production:</b> 2017-2023
+                                    <br>
+                                    <b>Engine:</b> 4.0L twin-turbocharged V8
+                                    <br>
+                                    <b>Power:</b> 710 hp (720 PS)
+                                    <br>
+                                    <b>0-100 kph:</b> 2.9 seconds
+                                    <br>
+                                    <b>Top Speed:</b> 341 km/h
+                                    <br>
+                                    <b>Type:</b> Hybrid Hypercar
+                                    <br>
+                                    <b>Notable Feature:</b> Active aerodynamics, Proactive Chassis Control II, dihedral doors
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Mclaren Senna</b></button>
+                    <div class="contentb row">
+                        <div id="demo3" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#demo3" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#demo3" data-bs-slide-to="2"></button>
+                                <button data-bs-target="#demo3" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="s1.jpeg" alt="Maclaren Senna" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="s2.jpeg" alt="Maclaren Senna" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="s3.jpeg" alt="Maclaren Senna" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="s4.jpeg" alt="Maclaren Senna" style="height: 350px; width: 300px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#demo3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#demo3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>            
+                            </button> 
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li> The <b>Mclaren Artuna</b> is a track-focused hypercar named after legendary Formula 1 driver Ayrton Senna. 
+                                    It is designed to deliver the ultimate performance on the track while remaining road-legal.
+                                </li>
+                                <li>
+                                    <b>Production:</b> 2018-2019
+                                    <br>
+                                    <b>Engine:</b> 4.0L twin-turbocharged V8
+                                    <br>
+                                    <b>Power:</b> 789 hp (800 PS)
+                                    <br>
+                                    <b>0-100 kph:</b> 2.8 seconds
+                                    <br>
+                                    <b>Top Speed:</b> 335 km/h
+                                    <br>
+                                    <b>Type:</b> Track-focused Hypercar
+                                    <br>
+                                    <b>Notable Feature:</b> Active aerodynamics, carbon fiber construction, dihedral doors
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Mclaren Artuna</b></button>
+                    <div class="contentb row">
+                        <div id="demo4" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#demo4" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#demo4" data-bs-slide-to="2"></button>
+                                <button data-bs-target="#demo4" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="720s1.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="720s2.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="720s3.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="720s4.jpeg" alt="Maclaren P1" style="height: 350px; width: 300px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#demo4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#demo4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>            
+                            </button> 
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li> The <b>Mclaren 720S</b> is a high-performance supercar known for its lightweight design, 
+                                    extreme aerodynamics, and blistering speed. Part of McLaren’s Super Series, it was 
+                                    introduced in 2017 as the successor to the 650S
+                                </li>
+                                <li>
+                                    <b>Production:</b> 2017-2023
+                                    <br>
+                                    <b>Engine:</b> 4.0L twin-turbocharged V8
+                                    <br>
+                                    <b>Power:</b> 710 hp (720 PS)
+                                    <br>
+                                    <b>0-100 kph:</b> 2.9 seconds
+                                    <br>
+                                    <b>Top Speed:</b> 341 km/h
+                                    <br>
+                                    <b>Type:</b> Hybrid Hypercar
+                                    <br>
+                                    <b>Notable Feature:</b> Active aerodynamics, Proactive Chassis Control II, dihedral doors
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+    document.querySelectorAll(".collapsible").forEach(button => {
+        button.addEventListener("click", function() {
+            let content = this.nextElementSibling;
+    
+            // Ensure content exists
+            if (!content || !content.classList.contains("contentb")) return;
+    
+            if (!this.classList.contains("active")) {
+                // Close all other collapsible sections
+                document.querySelectorAll(".collapsible").forEach(btn => {
+                    btn.classList.remove("active");
+                    let otherContent = btn.nextElementSibling;
+                    if (otherContent && otherContent.classList.contains("contentb")) {
+                        otherContent.style.maxHeight = null;
+                    }
+                });
+    
+                // Open the clicked section
+                this.classList.add("active");
+                content.style.maxHeight = content.scrollHeight + "px";
+            } else {
+                // Close the clicked section if it's already open
+                this.classList.remove("active");
+                content.style.maxHeight = null;
+            }
+        });
+    });
+    </script>
+    
+    
+    
+    
+    <!-- Footer -->
+    <footer class="mt-5">
+        <p>&copy; 2025 CAROPEDIA. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+</body>
+</html>
