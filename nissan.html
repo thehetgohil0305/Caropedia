@@ -4,16 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NISSAN</title>
-    <link rel="stylesheet" href="cpd.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
-          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
-          crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" 
-            crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAFAFA; /* Light gray background for softness */
+            color: #333333; /* Dark gray text for better readability */
+        }
+
+        header {
+            background-color: #053816; 
+            color: white;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 15px;
+            text-transform: uppercase;
+        }
+
+        header img {
+            height: 65px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF ; /* Light cream/gray background for content */
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .nissan-logo {
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none; /* Use bullets for the list items */
+            padding-left: 0; /* Add some left padding for proper alignment */
+        }
+
+        ul li {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+
+        .car-image {
+            max-width: 80%;
+            height: 300px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid #037A68; /* McLaren orange border */
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #212121; /* McLaren orange */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .collapsible {
+            background-color: white;
+            color: #037A68;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 5px;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #037A68;
+            color: white;
+        }
+
+        .contentb {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            padding: 0 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        
+
+        .carousel-item img {
+            height: auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .mclaren-logo {
+                height: 80px;
+            }
+
+            header img {
+                height: 50px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="bd">
@@ -23,5 +151,259 @@
             </div>
         </div>
     </header>
+    <div class="container mt-4">
+        <div class="content">
+            <h1 class="text-center">
+                <img src="NISSAN.png" alt="Nissan Logo" class="nissan-logo">
+                <b>Nissan</b>
+            </h1>
+            <ul class="mt-4">
+                <li>
+                    <b>Nissan</b> is a Japanese automotive giant known for its <b>engineering excellence, innovation, and performance-driven vehicles</b>. 
+                    Founded in <b>1933</b>, Nissan has built a strong reputation in motorsports and road cars, offering a diverse range of vehicles from 
+                    <b>high-performance sports cars to reliable sedans</b>.
+                    <br>
+                    <div class="text-center">
+                        <img src="founder.jpeg" alt="Yoshisuke Aikawa" class="car-image">
+                        <h5>Yoshisuke Aikawa (Founder)</h5>
+                    </div>
+                </li>
+                
+                <li>
+                    As of 2025, the CEO of Nissan is <b>Makoto Uchida</b>, driving the company towards technological advancements, sustainability, and electrification.
+                    <br>
+                    <img src="ceo.jpeg" alt="Makoto Uchida" class="car-image">
+                    <h5 class="center">Makoto Uchida (CEO)</h5>
+                </li>
+                <li>
+                    Nissan has a deep-rooted history in motorsports, particularly in <b>Super GT</b> and endurance racing, 
+                    where the <b>Nissan NISMO Team</b> has established itself as a dominant force. With a strong legacy of 
+                    engineering excellence, the team is committed to developing <b>high-performance, aerodynamically advanced 
+                    race cars</b> that compete at the highest levels of motorsport. Focused on <b>innovation, precision, 
+                    and strategic excellence</b>, Nissan aims to achieve consistent victories and reinforce its reputation 
+                    as a powerhouse in the racing world.
+                </li>
+                <li>
+                    Nissan has a rich history in motorsport, with legendary drivers contributing to its racing heritage. 
+                    The brand has achieved significant success in endurance racing, including multiple victories at the 
+                    prestigious <b>Le Mans 24 Hours</b> and dominance in <b>Super GT</b>. Nissan’s race cars, such as 
+                    the iconic <b>R32 GT-R "Godzilla"</b> and the <b>Nissan GT-R NISMO GT500</b>, have cemented its 
+                    reputation for performance and durability on some of the world's most challenging circuits.
+                </li>
+                <li>
+                    Nissan's current road cars are renowned for their blend of performance, innovation, and reliability. 
+                    Iconic models like the <b>GT-R</b>, <b>Z</b>, and <b>Ariya</b> showcase the brand’s commitment to 
+                    <b>engineering excellence, aerodynamics, and advanced technology</b>. With a focus on power, efficiency, 
+                    and driving excitement, Nissan continues to set benchmarks in the world of sports cars, performance 
+                    vehicles, and electric mobility.
+                </li>
+            </ul>
+            <ol>
+                <li>
+                    <button class="collapsible"><b>Nissan GT-R</b></button>
+                    <div class="contentb row">
+                        <div id="demo1" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="3"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="4"></button>
+                                <button data-bs-target="#demo1" data-bs-slide-to="5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" style="color: #FFFFFF; background-color: #FFFFFF;">
+                                    <img src="gtrg.jpg" alt="Nissan GT-R" style="height: 350px; width: 350px;">
+                                </div>
+                                <div class="carousel-item" style="color: #FFFFFF; background-color: #FFFFFF;">
+                                    <img src="gtr1.jpeg" alt="Nissan GT-R" style="height: 350px; width: 400px;">
+                                    <!-- <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="background-color: grey; color: white; width: 150px; text-align: center;">GT-R R31</h5>
+                                    </div> -->
+                                </div>
+                                <div class="carousel-item" style="color: #FFFFFF; background-color: #FFFFFF;">
+                                    <img src="gtr2.jpeg" alt="Nissan GT-R" style="height: 350px; width: 400px;">
+                                </div>
+                                <div class="carousel-item" style="color: #FFFFFF; background-color: #FFFFFF;">
+                                    <img src="gtr3.jpeg" alt="Nissan GT-R" style="height: 350px; width: 400px;">
+                                </div>
+                                <div class="carousel-item" style="color: #FFFFFF; background-color: #FFFFFF;">
+                                    <img src="gtr4.jpeg" alt="Nissan GT-R" style="height: 350px; width: 350px;">
+                                </div>
+                                <div class="carousel-item" style="color: #FFFFFF; background-color: #FFFFFF;">
+                                    <img src="gtr5.jpeg" alt="Nissan GT-R" style="height: 350px; width: 400px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#demo1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#demo1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>            
+                            </button> 
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>The <b>Nissan GT-R</b>, often caleed "Godzilla", is one of the most iconic 
+                                    <b>high-performance sports cars</b> in history. Known for its <b>butting-edge technology, 
+                                    AWD System and insane acceleration</b>, the GT-R has dominated <b>drag races, time attack
+                                    and circuits worldwide</b>.
+
+                                </li>
+                                <li>
+                                    <b>Production:</b> 2007-Present
+                                    <br>
+                                    <b>Engine:</b> 3.8L twin-turbocharged V6
+                                    <br>
+                                    <b>Power:</b> 600 HP
+                                    <br>
+                                    <b>0-100 kph:</b> 2.7 seconds
+                                    <br>
+                                    <b>Top Speed:</b> 330 km/h
+                                    <br>
+                                    <b>Type:</b> Supercar
+                                    <br>
+                                    <b>Notable Feature:</b> ATTESA E-TS AWD System, Launch Control, Hand-Built Engine
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Nissan Z</b></button>
+                    <div class="contentb row">
+                        <div id="demo2" class="carousel slide col-md-6" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="z1.jpg" alt="Nissan Z" style="height: 350px; width: 300px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="z2.jpg" alt="Nissan Z" style="height: 350px; width: 300px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#demo2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#demo2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>            
+                            </button> 
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>
+                                    The <b>Nissan Z</b> (Fairlady Z in Japan) is <b>one of the most celebrated Japanese sports cars</b>, 
+                                    known for its <b>agile handling, balanced power, and timeless design</b>. From the <b>Datsun 240Z</b> 
+                                    to the latest <b>Nissan Z (RZ34)</b>, the Z series has always represented <b>affordable performance 
+                                    and driver-focused dynamics.</b>
+                                </li>
+                                <li>
+                                    <b>Production:</b> 1969-Present
+                                    <br>
+                                    <b>Engine:</b> 3.0L twin-turbo V6
+                                    <br>
+                                    <b>Power:</b> 400 HP
+                                    <br>
+                                    <b>0-100 kph:</b> 4.3 seconds
+                                    <br>
+                                    <b>Top Speed:</b> 250 km/h
+                                    <br>
+                                    <b>Type:</b> Sports Car
+                                    <br>
+                                    <b>Notable Feature:</b> Manual Transmission Option, Retro-Inspired Design
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Nissan Silvia</b></button>
+                    <div class="contentb row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>
+                                    The <b>Nissan Silvia</b> is a legendary sports car known for its <b>drift-friendly rear-wheel-drive layout and 
+                                    turbocharged performance</b>. Popular among drift enthusiasts and tuners, the Silvia has become an icon in the 
+                                    <b>world of motorsport and car culture</b>. It is a <b>lightweight, rear-wheel-drive sports coupe</b> that became a <b>drifting 
+                                    legend</b>. Models like the <b>S13, S14, and S15</b> are extremely popular in <b>JDM car culture</b> and <b>Formula Drift competitions</b>.
+                                </li>
+                                <li>
+                                    <b>Production:</b> 1964-2002
+                                    <br>
+                                    <b>Engine:</b> 2.0L turbocharged I4
+                                    <br>
+                                    <b>Power:</b> 250 HP (tunable up to 600+ HP)
+                                    <br>
+                                    <b>Type:</b> JDM Sports Coupe / Drift Car
+                                    <br>
+                                    <b>Notable Feature:</b> Rear-Wheel Drive, Tunability, Legendary SR20DET Engine
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="collapsible"><b>Nissan Altima</b></button>
+                    <div class="contentb row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>The **Nissan Altima** is a sporty midsize sedan with turbocharged performance and intelligent AWD capabilities.</li>
+                                <li>
+                                    <b>Production:</b> 1992-Present
+                                    <br>
+                                    <b>Engine:</b> 2.0L VC-Turbo I4
+                                    <br>
+                                    <b>Power:</b> 248 HP
+                                    <br>
+                                    <b>Type:</b> Midsize Sedan
+                                    <br>
+                                    <b>Notable Feature:</b> Variable compression turbo technology
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    let collapsibleButtons = document.querySelectorAll(".collapsible");
+
+    collapsibleButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Close all collapsible sections except the clicked one
+            collapsibleButtons.forEach(btn => {
+                if (btn !== this) {
+                    btn.classList.remove("active");
+                    let otherContent = btn.nextElementSibling;
+                    if (otherContent) {
+                        otherContent.style.maxHeight = null;
+                        otherContent.style.overflow = "hidden";
+                    }
+                }
+            });
+
+            // Toggle the clicked section
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+
+            if (content) {
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null; // Collapse
+                    content.style.overflow = "hidden";
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px"; // Expand
+                    content.style.overflow = "visible";
+                }
+            }
+        });
+    });
+});
+
+    </script>
+
+    <footer class="mt-5">
+        <p>&copy; 2025 CAROPEDIA. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
