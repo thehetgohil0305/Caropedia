@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAFAFA; 
+    color: #333333;
+}
+
+header {
+    background-color: #053816; 
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    text-transform: uppercase;
+}
+
+header img {
+    height: 65px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    background-color: #FFFFFF ;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.aston-martin-logo {
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.car-image {
+    max-width: 80%;
+    height: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #037A68; 
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background-color: #212121; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.collapsible {
+    background-color: white;
+    color: #037A68;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.active, .collapsible:hover {
+    background-color: #037A68;
+    color: white;
+}
+
+.contentb {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    padding: 0 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+
+.carousel-item img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .mclaren-logo {
+        height: 80px;
+    }
+
+    header img {
+        height: 50px;
+    }
+}

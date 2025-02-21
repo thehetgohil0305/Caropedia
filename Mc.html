@@ -8,140 +8,11 @@
           rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mc.css">
           
-    <style>
-        /* Custom styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FAFAFA; /* Light gray background for softness */
-            color: #333333; /* Dark gray text for better readability */
-        }
-
-        header {
-            background-color: #053816; 
-            color: white;
-            padding: 20px 0;
-        }
-
-        header h1 {
-            font-size: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            gap: 15px;
-            text-transform: uppercase;
-        }
-
-        header img {
-            height: 65px;
-        }
-
-        header a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        .content {
-            padding: 20px;
-            background-color: #FFFFFF ; /* Light cream/gray background for content */
-            border-radius: 8px;
-            margin-top: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
-
-        .mclaren-logo {
-            height: 120px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        ul {
-            list-style-type: none; /* Use bullets for the list items */
-            padding-left: 0; /* Add some left padding for proper alignment */
-        }
-
-        ul li {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-
-        .car-image {
-            max-width: 80%;
-            height: 300px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            border: 2px solid #FF7F00; /* McLaren orange border */
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        footer {
-            background-color: #212121; /* McLaren orange */
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 16px;
-        }
-
-        .collapsible {
-            background-color: white;
-            color: rgb(219, 109, 19);
-            cursor: pointer;
-            padding: 10px;
-            border: none;
-            text-align: left;
-            border-radius: 10px;
-            font-size: 16px;
-            margin-top: 5px;
-            transition: background-color 0.5s ease, color 0.5s ease;
-        }
-
-        .active, .collapsible:hover {
-            background-color: rgb(219, 109, 19);
-            color: white;
-        }
-
-        .contentb {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-out;
-            padding: 0 10px;
-            background-color: #f1f1f1;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-
-        .carousel-item img {
-            height: auto;
-            max-width: 100%;
-            display: block;
-            margin: 0 auto;
-            border-radius: 8px;
-        }
-
-        @media (max-width: 768px) {
-            .mclaren-logo {
-                height: 80px;
-            }
-
-            header img {
-                height: 50px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <!-- Header Section -->
+    
     <header>
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
@@ -151,13 +22,11 @@
                 </h1>
                 <nav>
                     <a href="c.html" class="btn btn-light">Home</a>
-                    <a href="c.html" class="btn btn-light">Gallery</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
     <div class="container mt-4">
         <div class="content">
             <h1 class="text-center">
@@ -176,7 +45,7 @@
                 </li>
                 
                 <li>
-                    As of 2021, the CEO of McLaren Automotive is <b>Zak Brown</b>, steering the brand toward <b>cutting-edge 
+                    The CEO of McLaren Automotive is <b>Zak Brown</b>, steering the brand toward <b>cutting-edge 
                     performance, hybrid and electric innovation, and motorsport excellence</b>. Under his leadership, McLaren 
                     continues to push the boundaries of <b>lightweight engineering, aerodynamics, and high-performance supercars</b>.
                     <br>
@@ -229,10 +98,10 @@
                                 </div>
                             </div>
                             <button class="carousel-control-prev" data-bs-target="#demo1" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
+                                <img src="prev.png" alt="" style="height: 60px; width: 60px; margin-left: 8px;">
                             </button>
                             <button class="carousel-control-next" data-bs-target="#demo1" data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>            
+                                <img src="next.png" alt="" style="height: 60px; width: 60px; margin-right: 8px;">            
                             </button> 
                         </div>
                         <div class="col-md-6">
@@ -285,10 +154,10 @@
                                 </div>
                             </div>
                             <button class="carousel-control-prev" data-bs-target="#demo2" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
+                                <img src="prev.png" alt="" style="height: 60px; width: 60px; margin-left: 8px;">
                             </button>
                             <button class="carousel-control-next" data-bs-target="#demo2" data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>            
+                                <img src="next.png" alt="" style="height: 60px; width: 60px; margin-right: 8px;">            
                             </button> 
                         </div>
                         <div class="col-md-6">
@@ -341,10 +210,10 @@
                                 </div>
                             </div>
                             <button class="carousel-control-prev" data-bs-target="#demo3" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
+                                <img src="prev.png" alt="" style="height: 60px; width: 60px; margin-left: 8px;">
                             </button>
                             <button class="carousel-control-next" data-bs-target="#demo3" data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>            
+                                <img src="next.png" alt="" style="height: 60px; width: 60px; margin-right: 8px;">            
                             </button> 
                         </div>
                         <div class="col-md-6">
@@ -396,10 +265,10 @@
                                 </div>
                             </div>
                             <button class="carousel-control-prev" data-bs-target="#demo4" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
+                                <img src="prev.png" alt="" style="height: 60px; width: 60px; margin-left: 8px;">
                             </button>
                             <button class="carousel-control-next" data-bs-target="#demo4" data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>            
+                                <img src="next.png" alt="" style="height: 60px; width: 60px; margin-right: 8px;">            
                             </button> 
                         </div>
                         <div class="col-md-6">
@@ -432,43 +301,27 @@
     </div>
 
     <script>
-    document.querySelectorAll(".collapsible").forEach(button => {
-        button.addEventListener("click", function() {
-            let content = this.nextElementSibling;
-    
-            // Ensure content exists
-            if (!content || !content.classList.contains("contentb")) return;
-    
-            if (!this.classList.contains("active")) {
-                // Close all other collapsible sections
-                document.querySelectorAll(".collapsible").forEach(btn => {
-                    btn.classList.remove("active");
-                    let otherContent = btn.nextElementSibling;
-                    if (otherContent && otherContent.classList.contains("contentb")) {
-                        otherContent.style.maxHeight = null;
-                    }
-                });
-    
-                // Open the clicked section
-                this.classList.add("active");
-                content.style.maxHeight = content.scrollHeight + "px";
-            } else {
-                // Close the clicked section if it's already open
-                this.classList.remove("active");
-                content.style.maxHeight = null;
-            }
+        document.querySelectorAll(".collapsible").forEach(button => {
+            button.addEventListener("click", function() {
+                let content = this.nextElementSibling;
+                if (!this.classList.contains("active")) {
+                    document.querySelectorAll(".collapsible").forEach(btn => {
+                        btn.classList.remove("active");
+                        btn.nextElementSibling.style.maxHeight = null;
+                    });
+                    this.classList.add("active");
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    this.classList.remove("active");
+                    content.style.maxHeight = null;
+                }
+            });
         });
-    });
     </script>
     
-    
-    
-    
-    <!-- Footer -->
     <footer class="mt-5">
         <p>&copy; 2025 CAROPEDIA. All Rights Reserved.</p>
     </footer>
 
-    <!-- Bootstrap Scripts -->
 </body>
 </html>

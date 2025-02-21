@@ -9,139 +9,8 @@
           rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="t.css">
 
-    <style>
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FAFAFA; 
-            color: #333333; 
-        }
-
-        header {
-            background-color: #053816; 
-            color: white;
-            padding: 20px 0;
-        }
-
-        header h1 {
-            font-size: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            gap: 15px;
-            text-transform: uppercase;
-        }
-
-        header img {
-            height: 65px;
-        }
-
-        header a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        .content {
-            padding: 20px;
-            background-color: #FFFFFF ; /* Light cream/gray background for content */
-            border-radius: 8px;
-            margin-top: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
-
-        .toyota-logo {
-            height: 120px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        ul {
-            list-style-type: none; /* Use bullets for the list items */
-            padding-left: 0; /* Add some left padding for proper alignment */
-        }
-
-        ul li {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-
-        .car-image {
-            max-width: 80%;
-            height: 300px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            border: 2px solid #666464; /* McLaren orange border */
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        footer {
-            background-color: #212121; /* McLaren orange */
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 16px;
-        }
-
-        .collapsible {
-            background-color: white;
-            color: #666464;
-            cursor: pointer;
-            padding: 10px;
-            border: none;
-            text-align: left;
-            border-radius: 10px;
-            font-size: 16px;
-            margin-top: 5px;
-            transition: background-color 0.5s ease, color 0.5s ease;
-        }
-
-        .active, .collapsible:hover {
-            background-color: #666464;
-            color: white;
-        }
-
-        .contentb {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-out;
-            padding: 0 10px;
-            background-color: #f1f1f1;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-
-        
-
-        .carousel-item img {
-            height: auto;
-            max-width: 100%;
-            display: block;
-            margin: 0 auto;
-            border-radius: 8px;
-        }
-
-        @media (max-width: 768px) {
-            .mclaren-logo {
-                height: 80px;
-            }
-
-            header img {
-                height: 50px;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -153,7 +22,6 @@
                 </h1>
                 <nav>
                     <a href="c.html" class="btn btn-light">Home</a>
-                    <!-- <a href="c.html" class="btn btn-light">Gallery</a> -->
                 </nav>
             </div>
         </div>
@@ -250,11 +118,9 @@
                                 </div>
                             </div>
                             <button class="carousel-control-prev" data-bs-target="#demo1" data-bs-slide="prev">
-                                <!-- <span class="carousel-control-prev-icon"></span> -->
                                 <img src="prev.png" alt="" style="height: 60px; width: 60px; margin-left: 8px;">
                             </button>
                             <button class="carousel-control-next" data-bs-target="#demo1" data-bs-slide="next">
-                                <!-- <span class="carousel-control-next-icon"></span> -->
                                 <img src="next.png" alt="" style="height: 60px; width: 60px; margin-right: 8px;">
                             </button> 
                         </div>
@@ -316,11 +182,9 @@
                                 </div>
                             </div>
                             <button class="carousel-control-prev" data-bs-target="#demo2" data-bs-slide="prev">
-                                <!-- <span class="carousel-control-prev-icon"></span> -->
                                 <img src="prev.png" alt="" style="height: 60px; width: 60px; margin-left: 8px;">
                             </button>
                             <button class="carousel-control-next" data-bs-target="#demo2" data-bs-slide="next">
-                                <!-- <span class="carousel-control-next-icon"></span>-->
                                 <img src="next.png" alt="" style="height: 60px; width: 60px; margin-right: 8px;">
                             </button> 
                         </div>
@@ -384,11 +248,9 @@
                                 </div>
                             </div>
                             <button class="carousel-control-prev" data-bs-target="#demo2" data-bs-slide="prev">
-                                <!-- <span class="carousel-control-prev-icon"></span> -->
                                 <img src="prev.png" alt="" style="height: 60px; width: 60px; margin-left: 8px;">
                             </button>
                             <button class="carousel-control-next" data-bs-target="#demo2" data-bs-slide="next">
-                                <!-- <span class="carousel-control-next-icon"></span>-->
                                 <img src="next.png" alt="" style="height: 60px; width: 60px; margin-right: 8px;">
                             </button> 
                         </div>
@@ -433,22 +295,22 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" style="color: #FFFFFF; background-color: #FFFFFF;">
-                                    <img src="altmia1.jpg" alt="Toyota Yaris" style="height: 350px; width: 350px;">
+                                    <img src="lc1.jpg" alt="Toyota Land Cruiser" style="height: 350px; width: 350px;">
                                 </div>
                                 <div class="carousel-item" style="color: #FFFFFF; background-color: #FFFFFF;">
-                                    <img src="altima2.jpeg" alt="Toyota Yaris" style="height: 350px; width: 300px;">
+                                    <img src="lc2.jpeg" alt="Toyota Land Cruiser" style="height: 350px; width: 300px;">
                                 </div>
                                 <div class="carousel-item" style="color: #FFFFFF; background-color: #FFFFFF;">
-                                    <img src="altima3.jpeg" alt="Toyota Yaris" style="height: 350px; width: 300px;">
+                                    <img src="lc3.jpeg" alt="Toyota Land Cruiser" style="height: 350px; width: 300px;">
                                 </div>
                                 <div class="carousel-item" style="color: #FFFFFF; background-color: #FFFFFF;">
-                                    <img src="altima4.jpeg" alt="Toyota Yaris" style="height: 350px; width: 300px;">
+                                    <img src="lc4.jpeg" alt="Toyota Land Cruiser" style="height: 350px; width: 300px;">
                                 </div>
                                 <div class="carousel-item" style="color: #FFFFFF; background-color: #FFFFFF;">
-                                    <img src="altima5.jpeg" alt="Toyota Yaris" style="height: 350px; width: 350px;">
+                                    <img src="lc5.jpeg" alt="Toyota Land Cruiser" style="height: 350px; width: 350px;">
                                 </div>
                                 <div class="carousel-item" style="color: #FFFFFF; background-color: #FFFFFF;">
-                                    <img src="altima6.jpeg" alt="Toyota Yaris" style="height: 350px; width: 300px;">
+                                    <img src="lc6.jpeg" alt="Toyota Land Cruiser" style="height: 350px; width: 300px;">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" data-bs-target="#demo3" data-bs-slide="prev">
@@ -493,39 +355,22 @@
     </div>
     
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-    let collapsibleButtons = document.querySelectorAll(".collapsible");
-
-    collapsibleButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            // Close all collapsible sections except the clicked one
-            collapsibleButtons.forEach(btn => {
-                if (btn !== this) {
-                    btn.classList.remove("active");
-                    let otherContent = btn.nextElementSibling;
-                    if (otherContent) {
-                        otherContent.style.maxHeight = null;
-                        otherContent.style.overflow = "hidden";
-                    }
+    document.querySelectorAll(".collapsible").forEach(button => {
+            button.addEventListener("click", function() {
+                let content = this.nextElementSibling;
+                if (!this.classList.contains("active")) {
+                    document.querySelectorAll(".collapsible").forEach(btn => {
+                        btn.classList.remove("active");
+                        btn.nextElementSibling.style.maxHeight = null;
+                    });
+                    this.classList.add("active");
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    this.classList.remove("active");
+                    content.style.maxHeight = null;
                 }
             });
-
-            // Toggle the clicked section
-            this.classList.toggle("active");
-            let content = this.nextElementSibling;
-
-            if (content) {
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null; // Collapse
-                    content.style.overflow = "hidden";
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px"; // Expand
-                    content.style.overflow = "visible";
-                }
-            }
         });
-    });
-});
 
     </script>
 
